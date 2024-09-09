@@ -9,12 +9,6 @@ app.use(express.json());
 // Routes
 app.use("/api", todoRoutes);
 
-app.use(cors());
-
-app.get("/", (req, res) => {
-  res.send("Welcome to the Express API!");
-});
-
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
